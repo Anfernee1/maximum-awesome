@@ -126,16 +126,16 @@ namespace :install do
     end
   end
 
-  desc 'Install Homebrew Cask'
-  task :brew_cask do
-    step 'Homebrew Cask'
-    system('brew untap phinze/cask') if system('brew tap | grep phinze/cask > /dev/null')
-    unless system('brew tap | grep caskroom/cask > /dev/null') || system('brew tap caskroom/homebrew-cask')
-      abort "Failed to tap caskroom/homebrew-cask in Homebrew."
-    end
-
-    brew_install 'brew-cask'
-  end
+#  desc 'Install Homebrew Cask'
+#  task :brew_cask do
+#    step 'Homebrew Cask'
+#    system('brew untap phinze/cask') if system('brew tap | grep phinze/cask > /dev/null')
+#    unless system('brew tap | grep caskroom/cask > /dev/null') || system('brew tap caskroom/homebrew-cask')
+#      abort "Failed to tap caskroom/homebrew-cask in Homebrew."
+#    end
+#
+#    brew_install 'brew-cask'
+#  end
 
   desc 'Install The Silver Searcher'
   task :the_silver_searcher do
