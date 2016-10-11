@@ -34,3 +34,5 @@ silent! autocmd VimEnter * RemoveConflictingAlignMaps
 
 " YouCompleteMe Plugin conf
 "let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
+" Rust
+let g:rustfmt_autosave=1
